@@ -21,7 +21,7 @@ def ZK_equality(G,H):
 
 
 #A function for create ciphertext
-def def CreateCipher(r, m, G, H):
+def CreateCipher(r, m, G, H):
     a = r.value * G
     b = r.value * H + m.value * G
     return a, b
